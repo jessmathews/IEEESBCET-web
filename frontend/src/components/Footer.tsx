@@ -1,9 +1,12 @@
 import React from 'react';
 import { FacebookIcon, TwitterIcon, InstagramIcon, LinkedinIcon, MailIcon, PhoneIcon, MapPinIcon } from 'lucide-react';
 import logo from "../assets/IEEE_logo.svg"
+// import ParticlesBackground from './Particles';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
-  return <footer id="contact" className="bg-gray-900 text-white">
+    return<footer id="contact" className="bg-gray-900 text-white">
+
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -18,47 +21,47 @@ export const Footer = () => {
               college community.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/IEEE.SB.CET" className="text-gray-400 hover:text-white">
+              <Link to="https://www.facebook.com/IEEE.SB.CET" className="text-gray-400 hover:text-white">
                 <FacebookIcon size={20} />
-              </a>
-              {/* <a href="#" className="text-gray-400 hover:text-white">
+              </Link>
+              {/* <Link to="#" className="text-gray-400 hover:text-white">
                 <TwitterIcon size={20} />
-              </a> */}
-              <a href="https://www.instagram.com/ieeesbcet/" className="text-gray-400 hover:text-white">
+              </Link> */}
+              <Link to="https://www.instagram.com/ieeesbcet/" className="text-gray-400 hover:text-white">
                 <InstagramIcon size={20} />
-              </a>
-              <a href="https://www.linkedin.com/company/ieee-sb-cet" className="text-gray-400 hover:text-white">
+              </Link>
+              <Link to="https://www.linkedin.com/company/ieee-sb-cet" className="text-gray-400 hover:text-white">
                 <LinkedinIcon size={20} />
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-gray-400 hover:text-white">
+                <Link to="#home" className="text-gray-400 hover:text-white">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="text-gray-400 hover:text-white">
+                <Link to="#about" className="text-gray-400 hover:text-white">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#events" className="text-gray-400 hover:text-white">
+                <Link to="#events" className="text-gray-400 hover:text-white">
                   Events
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#membership" className="text-gray-400 hover:text-white">
+                <Link to="#membership" className="text-gray-400 hover:text-white">
                   Membership
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                <Link to="https://www.ieee.org/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                   IEEE Global
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -77,9 +80,9 @@ PIN : 695017                </span>
               </li>
               <li className="flex items-center">
                 <MailIcon size={18} className="mr-2 text-[#006699]" />
-                <a href="mailto:ieee@college.edu" className="text-gray-400 hover:text-white">
+                <Link to="mailto:ieee@college.edu" className="text-gray-400 hover:text-white">
                   ieee@college.edu
-                </a>
+                </Link>
               </li>
               <li className="flex items-center">
                 <PhoneIcon size={18} className="mr-2 text-[#006699]" />
@@ -95,5 +98,5 @@ PIN : 695017                </span>
           </p>
         </div>
       </div>
-    </footer>;
+    </footer>
 };

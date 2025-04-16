@@ -4,7 +4,7 @@ import ParticlesBackground from '../components/Particles';
 
 export const HeroSection = () => {
   return <section id="home" className="bg-gradient-to-b from-[#006699] to-[#0088cc] text-white py-2 relative">
-    <ParticlesBackground/>
+    <ParticlesBackground bgColor='#006699'/>
       <div className="container mx-auto px-4 relative">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">

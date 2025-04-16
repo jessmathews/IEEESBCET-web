@@ -3,7 +3,11 @@ import Particles from "react-tsparticles";
 import type { Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
 
-const ParticlesBackground = () => {
+interface ParticlesProps {
+  bgColor: string;
+}
+
+const ParticlesBackground = ({bgColor}: ParticlesProps) => {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
   }, []);
@@ -16,7 +20,7 @@ const ParticlesBackground = () => {
         fullScreen:false,
         background: {
           color: {
-            value: "#006699", // blue background
+            value: bgColor, // blue background
           },
         },
         fpsLimit: 90,
