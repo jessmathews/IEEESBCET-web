@@ -1,7 +1,7 @@
 {
   "name": "ieee-frontend",
   "version": "0.0.1",
-  "homepage": "https://jessmathews.github.io/IEEESBCET-web",
+  "homepage": "https://jessmathews.github.io/IEEESBCET-web/",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "preview": "npx vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fullcalendar/daygrid": "^6.1.15",
