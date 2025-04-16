@@ -1,7 +1,7 @@
 {
   "name": "ieee-frontend",
   "version": "0.0.1",
-  "homepage": "https://jessmathews.github.io/IEEESBCET-web",
+  "homepage": "https://jessmathews.github.io/IEEESBCET-web/",
   "private": true,
   "type": "module",
   "scripts": {
