@@ -9,9 +9,6 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link to='/'> <div className="flex items-center space-x-2">
           <img src={logo} alt="IEEE Logo" className="h-12" />
-          <div>
-            {/* <p className="text-gray-600 text-lg ">SB CET</p> */}
-          </div>
         </div>
         </Link>
         {/* Desktop Navigation */}

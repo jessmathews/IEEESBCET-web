@@ -1,6 +1,8 @@
 import React from 'react';
 import { FacebookIcon, TwitterIcon, InstagramIcon, LinkedinIcon, MailIcon, PhoneIcon, MapPinIcon } from 'lucide-react';
-import logo from "../assets/IEEE_logo.svg"
+import logo from "../assets/ieee-sb-logo.png"
+import ieee_logo from "../assets/IEEE_logo.svg"
+
 // import ParticlesBackground from './Particles';
 import { Link } from 'react-router-dom';
 
@@ -10,11 +12,9 @@ export const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-          <div className="flex items-center space-x-2">
-          <img src={logo} alt="IEEE Logo" className="h-10" />
-          <div>
-            <p className="text-3xl text-white">SB CET</p>
-          </div>
+          <div className="flex items-center space-x-4">
+            <img src={ieee_logo} alt="IEEE Logo" className="h-12"/>
+          <img src={logo} alt="IEEESB Logo" className="h-16" />
         </div>
             <p className="text-gray-400 mb-4">
               Advancing technology for the benefit of humanity through our
