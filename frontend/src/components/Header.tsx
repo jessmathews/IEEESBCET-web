@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MenuIcon, XIcon } from 'lucide-react';
-import logo from "../assets/IEEE_logo.svg"
+import logo from "../assets/ieee-sb-logo.png"
 import { Link } from 'react-router-dom';
 
 export const Header = () => {
@@ -8,7 +8,7 @@ export const Header = () => {
   return <header className="sticky top-0 z-50 bg-white shadow-md">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link to='/'> <div className="flex items-center space-x-2">
-          <img src={logo} alt="IEEE Logo" className="h-10" />
+          <img src={logo} alt="IEEE Logo" className="h-12" />
           <div>
             {/* <p className="text-gray-600 text-lg ">SB CET</p> */}
           </div>
