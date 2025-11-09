@@ -23,7 +23,8 @@ const ParticlesBackground = ({ bgColor }) => {
         background: {
           color: { value: bgColor },
         },
-        fpsLimit: 60,
+
+        fpsLimit: 30,
         interactivity: {
           events: {
             onClick: { enable: true, mode: "push" },
@@ -36,6 +37,7 @@ const ParticlesBackground = ({ bgColor }) => {
           },
         },
         particles: {
+          collisions: { enable: false },
           color: { value: "#ffffff" },
           links: {
             color: "#ffffff",
@@ -43,6 +45,7 @@ const ParticlesBackground = ({ bgColor }) => {
             enable: true,
             opacity: 0.7,
             width: 1,
+            limit:2,
           },
           move: {
             direction: "none",
@@ -53,8 +56,8 @@ const ParticlesBackground = ({ bgColor }) => {
             straight: false,
           },
           number: {
-            density: { enable: true, area: 600 },
-            value: 100,
+            density: { enable: true, area: 800 },
+            value: 30,
           },
           opacity: { value: 0.5 },
           shape: { type: "circle" },

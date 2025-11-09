@@ -74,7 +74,7 @@ export const StatsSection = () => {
               </div>
               <h3 className="text-4xl font-bold text-[#006699] mb-2">
               <Stat target={Number(stat.value)} /></h3>
-              <p className="text-xl font-semibold text-gray-800 mb-1">
+              <p className="text-xl font-semibold text-gray-800 mb-1 text-center">
                 {stat.label}
               </p>
               <p className="text-gray-600 text-center">{stat.description}</p>
