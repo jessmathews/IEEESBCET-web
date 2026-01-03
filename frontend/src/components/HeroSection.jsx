@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from './Carousel';
 import ParticlesBackground from './Particles';
 export const HeroSection = () => {
-  return <section id="home" className="bg-gradient-to-b from-[#006699] to-[#0088cc] text-white py-2 relative md:h-[90vh] ">
+  return <section id="home" className="bg-linear-to-b from-[#006699] to-[#0088cc] text-white py-2 relative md:h-[90vh] ">
       {/* <ParticlesBackground bgColor='#006699'/> */}
       <div className="container mx-auto px-4 relative lg:h-full py-16" >
         <div className="flex flex-col md:flex-row items-center">
