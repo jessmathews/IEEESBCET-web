@@ -1,15 +1,13 @@
 import React from 'react';
-import { UsersIcon, CalendarIcon, AwardIcon, RocketIcon } from 'lucide-react';
+import { FaUserGroup,FaRocket ,FaCalendarDays,FaAward } from 'react-icons/fa6';
+
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
-interface StatProps {
-  target: number;
-  duration?: number;
-}
 
-const Stat: React.FC<StatProps> = ({ target, duration = 2000 }) => {
-  const [count, setCount] = useState<number>(0);
+
+const Stat = ({ target, duration = 2000 }) => {
+  const [count, setCount] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false);
   const { ref, inView } = useInView({ triggerOnce: true });
 
@@ -43,22 +41,22 @@ const Stat: React.FC<StatProps> = ({ target, duration = 2000 }) => {
 
 export const StatsSection = () => {
   const stats = [{
-    icon: UsersIcon,
+    icon: FaUserGroup,
     value: '200',
     label: 'Active Members',
     description: 'Students and faculty combined'
   }, {
-    icon: CalendarIcon,
+    icon: FaCalendarDays ,
     value: '50',
     label: 'Events Conducted',
     description: 'In the past year'
   }, {
-    icon: RocketIcon,
+    icon: FaRocket ,
     value: '25',
     label: 'Projects Completed',
     description: 'Technical & community projects'
   }, {
-    icon: AwardIcon,
+    icon: FaAward,
     value: '15',
     label: 'Awards Won',
     description: 'Regional & national recognition'
@@ -76,7 +74,7 @@ export const StatsSection = () => {
               </div>
               <h3 className="text-4xl font-bold text-[#006699] mb-2">
               <Stat target={Number(stat.value)} /></h3>
-              <p className="text-xl font-semibold text-gray-800 mb-1">
+              <p className="text-xl font-semibold text-gray-800 mb-1 text-center">
                 {stat.label}
               </p>
               <p className="text-gray-600 text-center">{stat.description}</p>

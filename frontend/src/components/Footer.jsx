@@ -1,5 +1,5 @@
 import React from 'react';
-import { FacebookIcon, TwitterIcon, InstagramIcon, LinkedinIcon, MailIcon, PhoneIcon, MapPinIcon } from 'lucide-react';
+import { FaSquareFacebook,FaInstagram,FaXTwitter,FaLinkedin,FaRegEnvelope,FaPhone,FaMapLocationDot} from 'react-icons/fa6';
 import logo from "../assets/ieee-sb-logo.png"
 import ieee_logo from "../assets/IEEE_logo.svg"
 
@@ -12,7 +12,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 flex-wrap gap-4 mb-2">
             <img src={ieee_logo} alt="IEEE Logo" className="h-12"/>
           <img src={logo} alt="IEEESB Logo" className="h-16" />
         </div>
@@ -22,16 +22,16 @@ export const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <Link to="https://www.facebook.com/IEEE.SB.CET" className="text-gray-400 hover:text-white">
-                <FacebookIcon size={20} />
+                <FaSquareFacebook  size={20} />
               </Link>
               {/* <Link to="#" className="text-gray-400 hover:text-white">
-                <TwitterIcon size={20} />
+                <FaXTwitter  size={20} />
               </Link> */}
               <Link to="https://www.instagram.com/ieeesbcet/" className="text-gray-400 hover:text-white">
-                <InstagramIcon size={20} />
+                <FaInstagram  size={20} />
               </Link>
               <Link to="https://www.linkedin.com/company/ieee-sb-cet" className="text-gray-400 hover:text-white">
-                <LinkedinIcon size={20} />
+                <FaLinkedin  size={20} />
               </Link>
             </div>
           </div>
@@ -69,7 +69,7 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <MapPinIcon size={18} className="mr-2 mt-1 text-[#006699]" />
+                <FaMapLocationDot  size={18} className="mr-2 mt-1 text-[#006699]" />
                 <span className="text-gray-400">
                 College Of Engineering, Trivandrum
                 <br />
@@ -79,13 +79,13 @@ Sreekaryam - Kulathoor Rd, P.O, Sreekariyam
 PIN : 695017                </span>
               </li>
               <li className="flex items-center">
-                <MailIcon size={18} className="mr-2 text-[#006699]" />
+                <FaRegEnvelope size={18} className="mr-2 text-[#006699]" />
                 <Link to="mailto:ieee@college.edu" className="text-gray-400 hover:text-white">
                   ieee@college.edu
                 </Link>
               </li>
               <li className="flex items-center">
-                <PhoneIcon size={18} className="mr-2 text-[#006699]" />
+                <FaPhone size={18} className="mr-2 text-[#006699]" />
                 <span className="text-gray-400">(123) 456-7890</span>
               </li>
             </ul>

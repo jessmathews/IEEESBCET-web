@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users2Icon, BookOpenIcon, GlobeIcon, AwardIcon } from 'lucide-react';
+import { FaUserGroup,FaBookOpen,FaGlobe,FaAward } from 'react-icons/fa6';
 export const AboutSection = () => {
   return <section id="about" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -18,7 +18,7 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
             <div className="bg-[#006699]/10 p-3 rounded-full mb-4">
-              <Users2Icon size={32} className="text-[#006699]" />
+              <FaUserGroup  size={32} className="text-[#006699]" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Community</h3>
             <p className="text-gray-600">
@@ -28,7 +28,7 @@ export const AboutSection = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
             <div className="bg-[#006699]/10 p-3 rounded-full mb-4">
-              <BookOpenIcon size={32} className="text-[#006699]" />
+              <FaBookOpen  size={32} className="text-[#006699]" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Knowledge</h3>
             <p className="text-gray-600">
@@ -38,7 +38,7 @@ export const AboutSection = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
             <div className="bg-[#006699]/10 p-3 rounded-full mb-4">
-              <GlobeIcon size={32} className="text-[#006699]" />
+              <FaGlobe  size={32} className="text-[#006699]" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Networking</h3>
             <p className="text-gray-600">
@@ -47,7 +47,7 @@ export const AboutSection = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
             <div className="bg-[#006699]/10 p-3 rounded-full mb-4">
-              <AwardIcon size={32} className="text-[#006699]" />
+              <FaAward  size={32} className="text-[#006699]" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Recognition</h3>
             <p className="text-gray-600">
